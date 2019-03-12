@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pear\\Exception\\": "src/"
+            "PEAR\\Exception\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pear\\Exception\\Test\\": "tests/"
+            "PEAR\\Exception\\Test\\": "tests/"
         }
     },
     "extra": {

@@ -16,7 +16,7 @@
  * @link      http://pear.php.net/package/PEAR_Exception
  * @since     File available since Release 1.0.0
  */
-namespace Pear\Exception;
+namespace PEAR\Exception;
 
 use Exception;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Pear\Exception\Test;
+namespace PEAR\Exception\Test;
 
 use Exception;
-use Pear\Exception\PEAR_Exception;
+use PEAR\Exception\PEAR_Exception;
 use PHPUnit_Framework_TestCase;
 
 class PEAR_ExceptionTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @expectedException Pear\Exception\PEAR_Exception
+     * @expectedException PEAR\Exception\PEAR_Exception
      * @expectedExceptionMessage foo
      */
     public function testThrow()
@@ -51,7 +51,7 @@ class PEAR_ExceptionTest extends PHPUnit_Framework_TestCase
     public function testGetErrorClass()
     {
         $e = new PEAR_Exception('oops');
-        $this->assertEquals('Pear\Exception\Test\PEAR_ExceptionTest', $e->getErrorClass());
+        $this->assertEquals('PEAR\Exception\Test\PEAR_ExceptionTest', $e->getErrorClass());
     }
 
     public function testGetErrorMethod()
