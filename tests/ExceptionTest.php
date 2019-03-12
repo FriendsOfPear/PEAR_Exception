@@ -1,15 +1,15 @@
 <?php
-$localFile = __DIR__ . '/../../PEAR/Exception.php';
-if (file_exists($localFile)) {
-    require_once $localFile;
-} else {
-    require_once 'PEAR/Exception.php';
-}
+
+namespace Pear\Exception\Test;
+
+use Exception;
+use Pear\Exception\PEAR_Exception;
+use PHPUnit_Framework_TestCase;
 
 class PEAR_ExceptionTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @expectedException PEAR_Exception
+     * @expectedException Pear\Exception\PEAR_Exception
      * @expectedExceptionMessage foo
      */
     public function testThrow()
@@ -51,7 +51,7 @@ class PEAR_ExceptionTest extends PHPUnit_Framework_TestCase
     public function testGetErrorClass()
     {
         $e = new PEAR_Exception('oops');
-        $this->assertEquals('PEAR_ExceptionTest', $e->getErrorClass());
+        $this->assertEquals('Pear\Exception\Test\PEAR_ExceptionTest', $e->getErrorClass());
     }
 
     public function testGetErrorMethod()
@@ -75,4 +75,3 @@ class PEAR_ExceptionTest extends PHPUnit_Framework_TestCase
         $this->assertContains('oops', $html);
     }
 }
-?>

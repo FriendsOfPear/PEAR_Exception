@@ -16,7 +16,9 @@
  * @link      http://pear.php.net/package/PEAR_Exception
  * @since     File available since Release 1.0.0
  */
+namespace Pear\Exception;
 
+use Exception;
 
 /**
  * Base PEAR_Exception Class
@@ -58,7 +60,7 @@
  * 5) Usage example
  *
  * <code>
- *  require_once 'PEAR/Exception.php';
+ *  require_once 'PEAR/PEAR_Exception.php';
  *
  *  class Test {
  *     function foo() {
@@ -453,4 +455,3 @@ class PEAR_Exception extends Exception
         return $causeMsg . $this->getTraceAsString();
     }
 }
-?>

@@ -21,8 +21,13 @@
         "php": ">=4.4.0"
     },
     "autoload": {
-        "psr-0": {
-            "PEAR": ""
+        "psr-4": {
+            "Pear\\Exception\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pear\\Exception\\Test\\": "tests/"
         }
     },
     "extra": {
