@@ -20,6 +20,9 @@
     "require": {
         "php": ">=5.3.0"
     },
+    "replace": {
+        "pear/pear_exception": "*"
+    },
     "autoload": {
         "psr-4": {
             "PEAR\\Exception\\": "src/"
